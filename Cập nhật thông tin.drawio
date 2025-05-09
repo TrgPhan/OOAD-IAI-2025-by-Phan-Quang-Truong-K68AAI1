@@ -16,7 +16,7 @@
         <mxCell id="2.1" value="orderQuantity >= 1?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="320" width="80" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="2.2" value="orderQuantity <= 10000?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2.2" value="orderQuantity less or equal 10000?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="420" width="80" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="3.1" value="tradeType = &quot;buy&quot;?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
