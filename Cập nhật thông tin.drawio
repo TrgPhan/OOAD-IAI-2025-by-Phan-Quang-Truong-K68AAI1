@@ -25,7 +25,7 @@
         <mxCell id="3.2" value="tradeType = &quot;sell&quot;?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="600" y="520" width="80" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="4" value="orderQuantity <= availableQuantity?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4" value="orderQuantity equal or less than availableQuantity?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="620" width="80" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="5" value="balance >= totalCost?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
