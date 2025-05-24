@@ -6,348 +6,162 @@
         <mxCell id="1" parent="0"/>
 
         <!-- BE Classes -->
-        <mxCell id="2" value="User" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="50" width="150" height="150" as="geometry"/>
-          <mxCell id="3" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- user_id: UUID (PK)&lt;br&gt;- email: String&lt;br&gt;- password: String&lt;br&gt;- name: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="2">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="4" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ register(email: String, password: String, name: String): User&lt;br&gt;+ login(email: String, password: String): User&lt;br&gt;+ getInfo(user_id: UUID): User" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="2">
-            <mxGeometry y="70" width="140" height="80" as="geometry"/>
-          </mxCell>
+        <mxCell id="2" value="User&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- user_id: UUID (PK)&lt;br&gt;- email: String&lt;br&gt;- password: String&lt;br&gt;- name: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ register(email: String, password: String, name: String): User&lt;br&gt;+ login(email: String, password: String): User&lt;br&gt;+ getInfo(user_id: UUID): User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="280" height="160" as="geometry"/>
         </mxCell>
 
-        <mxCell id="5" value="Course" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="50" width="150" height="130" as="geometry"/>
-          <mxCell id="6" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- course_id: UUID (PK)&lt;br&gt;- course_name: String&lt;br&gt;- course_desc: String&lt;br&gt;- course_difficulty: Integer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="5">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="7" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getCourses(): List~Course~&lt;br&gt;+ getCourse(course_id: UUID): Course" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="5">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="5" value="Course&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- course_id: UUID (PK)&lt;br&gt;- course_name: String&lt;br&gt;- course_desc: String&lt;br&gt;- course_difficulty: Integer&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getCourses(): List~Course~&lt;br&gt;+ getCourse(course_id: UUID): Course" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="280" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="8" value="Lesson" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="50" width="150" height="130" as="geometry"/>
-          <mxCell id="9" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID (PK)&lt;br&gt;- lesson_name: String&lt;br&gt;- lesson_desc: String&lt;br&gt;- lesson_type: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="8">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="10" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getLessonDetails(lesson_id: UUID): LessonDetails&lt;br&gt;+ getLessonQuestions(lesson_id: UUID): List~Question~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="8">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="8" value="Lesson&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID (PK)&lt;br&gt;- lesson_name: String&lt;br&gt;- lesson_desc: String&lt;br&gt;- lesson_type: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getLessonDetails(lesson_id: UUID): LessonDetails&lt;br&gt;+ getLessonQuestions(lesson_id: UUID): List~Question~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="50" width="320" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="11" value="Question" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="50" width="150" height="130" as="geometry"/>
-          <mxCell id="12" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question_id: UUID (PK)&lt;br&gt;- question_type: String&lt;br&gt;- question_target: String&lt;br&gt;- question_choice: String (optional)" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="11">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="13" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getQuestions(lesson_id: UUID): List~Question~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="11">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="11" value="Question&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question_id: UUID (PK)&lt;br&gt;- question_type: String&lt;br&gt;- question_target: String&lt;br&gt;- question_choice: String (optional)&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getQuestions(lesson_id: UUID): List~Question~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="50" width="300" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="14" value="CourseLesson" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="250" width="150" height="120" as="geometry"/>
-          <mxCell id="15" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- cl_entries_id: UUID (PK)&lt;br&gt;- course_id: UUID (FK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- index_in_course: Integer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="14">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="16" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getLessonsInCourse(course_id: UUID): List~Lesson~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="14">
-            <mxGeometry y="70" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="14" value="CourseLesson&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- cl_entries_id: UUID (PK)&lt;br&gt;- course_id: UUID (FK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- index_in_course: Integer&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getLessonsInCourse(course_id: UUID): List~Lesson~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="300" height="130" as="geometry"/>
         </mxCell>
 
-        <mxCell id="17" value="LessonQuestion" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="250" width="150" height="120" as="geometry"/>
-          <mxCell id="18" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lq_entries_id: UUID (PK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- question_id: UUID (FK)&lt;br&gt;- index_in_lesson: Integer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="17">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="19" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getQuestionsInLesson(lesson_id: UUID): List~Question~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="17">
-            <mxGeometry y="70" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="17" value="LessonQuestion&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lq_entries_id: UUID (PK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- question_id: UUID (FK)&lt;br&gt;- index_in_lesson: Integer&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getQuestionsInLesson(lesson_id: UUID): List~Question~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="250" width="320" height="130" as="geometry"/>
         </mxCell>
 
-        <mxCell id="20" value="UserLessonProgress" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="250" width="150" height="130" as="geometry"/>
-          <mxCell id="21" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID (PK)&lt;br&gt;- user_id: UUID (FK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- last_activity_at: Timestamp&lt;br&gt;- correct_questions: Integer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="20">
-            <mxGeometry width="140" height="80" as="geometry"/>
-          </mxCell>
-          <mxCell id="22" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUserProgress(user_id: UUID): List~UserLessonProgress~&lt;br&gt;+ completeLessonProgress(progress_id: UUID): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="20">
-            <mxGeometry y="80" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="20" value="UserLessonProgress&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID (PK)&lt;br&gt;- user_id: UUID (FK)&lt;br&gt;- lesson_id: UUID (FK)&lt;br&gt;- last_activity_at: Timestamp&lt;br&gt;- correct_questions: Integer&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUserProgress(user_id: UUID): List~UserLessonProgress~&lt;br&gt;+ completeLessonProgress(progress_id: UUID): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="250" width="340" height="160" as="geometry"/>
         </mxCell>
 
-        <mxCell id="23" value="UserQuestionAnswer" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="250" width="150" height="130" as="geometry"/>
-          <mxCell id="24" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID (PK)&lt;br&gt;- question_id: UUID (PK)&lt;br&gt;- user_choice: String&lt;br&gt;- is_correct: Boolean" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="23">
-            <mxGeometry width="140" height="80" as="geometry"/>
-          </mxCell>
-          <mxCell id="25" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ submitAnswer(progress_id: UUID, question_id: UUID, user_choice: String): Boolean&lt;br&gt;+ getProgressDetails(progress_id: UUID): List~UserQuestionAnswer~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="23">
-            <mxGeometry y="80" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="23" value="UserQuestionAnswer&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID (PK)&lt;br&gt;- question_id: UUID (PK)&lt;br&gt;- user_choice: String&lt;br&gt;- is_correct: Boolean&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ submitAnswer(progress_id: UUID, question_id: UUID, user_choice: String): Boolean&lt;br&gt;+ getProgressDetails(progress_id: UUID): List~UserQuestionAnswer~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="250" width="380" height="160" as="geometry"/>
         </mxCell>
 
-        <mxCell id="26" value="ASLCharacter" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="50" width="150" height="130" as="geometry"/>
-          <mxCell id="27" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- char_name: String (PK)&lt;br&gt;- char_image_url: String&lt;br&gt;- char_tutorial_text: String&lt;br&gt;- char_tutorial_url: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="26">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="28" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getASLCharacters(): List~ASLCharacter~" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="26">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="26" value="ASLCharacter&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- char_name: String (PK)&lt;br&gt;- char_image_url: String&lt;br&gt;- char_tutorial_text: String&lt;br&gt;- char_tutorial_url: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getASLCharacters(): List~ASLCharacter~" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="50" width="280" height="140" as="geometry"/>
         </mxCell>
 
         <!-- FE Classes -->
-        <mxCell id="29" value="UserModel" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="450" width="150" height="120" as="geometry"/>
-          <mxCell id="30" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- user_id: UUID&lt;br&gt;- email: String&lt;br&gt;- name: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="29">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="31" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUser(user_id: UUID): UserModel" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="29">
-            <mxGeometry y="60" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="29" value="UserModel&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- user_id: UUID&lt;br&gt;- email: String&lt;br&gt;- name: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUser(user_id: UUID): UserModel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="250" height="120" as="geometry"/>
         </mxCell>
 
-        <mxCell id="32" value="CourseModel" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="450" width="150" height="130" as="geometry"/>
-          <mxCell id="33" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- course_id: UUID&lt;br&gt;- name: String&lt;br&gt;- description: String&lt;br&gt;- lessons: LessonDetails[]" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="32">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="34" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ fetchCourses(): CourseModel[]" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="32">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="32" value="CourseModel&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- course_id: UUID&lt;br&gt;- name: String&lt;br&gt;- description: String&lt;br&gt;- lessons: LessonDetails[]&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ fetchCourses(): CourseModel[]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="450" width="240" height="130" as="geometry"/>
         </mxCell>
 
-        <mxCell id="35" value="LessonSummary" style="shape=umlClass;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="450" width="150" height="110" as="geometry"/>
-          <mxCell id="36" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID&lt;br&gt;- name: String&lt;br&gt;- lesson_type: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="35">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="35" value="LessonSummary&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID&lt;br&gt;- name: String&lt;br&gt;- lesson_type: String" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="450" width="180" height="110" as="geometry"/>
         </mxCell>
 
-        <mxCell id="37" value="LessonDetails" style="shape=umlClass;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="1">
-          <mxGeometry x="650" y="450" width="150" height="120" as="geometry"/>
-          <mxCell id="38" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID&lt;br&gt;- name: String&lt;br&gt;- description: String&lt;br&gt;- lesson_type: String&lt;br&gt;- estimated_duration: number&lt;br&gt;- next_lesson_id?: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="37">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
+        <mxCell id="37" value="LessonDetails&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- lesson_id: UUID&lt;br&gt;- name: String&lt;br&gt;- description: String&lt;br&gt;- lesson_type: String&lt;br&gt;- estimated_duration: number&lt;br&gt;- next_lesson_id?: String" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="450" width="220" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="39" value="ProgressModel" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="450" width="150" height="130" as="geometry"/>
-          <mxCell id="40" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID&lt;br&gt;- lesson_id: UUID&lt;br&gt;- last_activity_at: Timestamp&lt;br&gt;- correct_questions: Integer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="39">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="41" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUserProgress(user_id: UUID): ProgressModel[]&lt;br&gt;+ completeLesson(progress_id: UUID): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="39">
-            <mxGeometry y="70" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="39" value="ProgressModel&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- progress_id: UUID&lt;br&gt;- lesson_id: UUID&lt;br&gt;- last_activity_at: Timestamp&lt;br&gt;- correct_questions: Integer&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ getUserProgress(user_id: UUID): ProgressModel[]&lt;br&gt;+ completeLesson(progress_id: UUID): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="450" width="300" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="42" value="QuestionDisplay" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="650" width="150" height="120" as="geometry"/>
-          <mxCell id="43" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question_type: String&lt;br&gt;- question_data: Question" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="42">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="44" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ renderQuestion(): JSX.Element&lt;br&gt;+ displayFeedback(is_correct: Boolean): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="42">
-            <mxGeometry y="60" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <!-- UI Components -->
+        <mxCell id="42" value="QuestionDisplay&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question_type: String&lt;br&gt;- question_data: Question&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ renderQuestion(): JSX.Element&lt;br&gt;+ displayFeedback(is_correct: Boolean): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="650" width="280" height="130" as="geometry"/>
         </mxCell>
 
-        <mxCell id="45" value="LearnQuestionComponent" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="650" width="150" height="120" as="geometry"/>
-          <mxCell id="46" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question: Question&lt;br&gt;- char_image_url: String&lt;br&gt;- tutorial_text: String&lt;br&gt;- tutorial_url: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="45">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="47" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ markAsReviewed(): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="45">
-            <mxGeometry y="70" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="45" value="LearnQuestionComponent&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question: Question&lt;br&gt;- char_image_url: String&lt;br&gt;- tutorial_text: String&lt;br&gt;- tutorial_url: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ markAsReviewed(): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="650" width="250" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="48" value="ChoiceQuestionComponent" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="650" width="150" height="120" as="geometry"/>
-          <mxCell id="49" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question: Question&lt;br&gt;- choices: String[]" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="48">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="50" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ handleSelection(choice: String): void&lt;br&gt;+ submitChoice(): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="48">
-            <mxGeometry y="60" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="48" value="ChoiceQuestionComponent&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- question: Question&lt;br&gt;- choices: String[]&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ handleSelection(choice: String): void&lt;br&gt;+ submitChoice(): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="650" width="240" height="130" as="geometry"/>
         </mxCell>
 
-        <mxCell id="51" value="HintPopup" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="650" width="150" height="120" as="geometry"/>
-          <mxCell id="52" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- char_name: String&lt;br&gt;- char_image_url: String&lt;br&gt;- tutorial_text: String&lt;br&gt;- tutorial_url: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="51">
-            <mxGeometry width="140" height="70" as="geometry"/>
-          </mxCell>
-          <mxCell id="53" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ showHint(): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="51">
-            <mxGeometry y="70" width="140" height="50" as="geometry"/>
-          </mxCell>
+        <mxCell id="51" value="HintPopup&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- char_name: String&lt;br&gt;- char_image_url: String&lt;br&gt;- tutorial_text: String&lt;br&gt;- tutorial_url: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ showHint(): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="650" width="200" height="140" as="geometry"/>
         </mxCell>
 
-        <mxCell id="54" value="DetectingMode" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="650" width="150" height="130" as="geometry"/>
-          <mxCell id="55" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- isConnected: Boolean&lt;br&gt;- drawingUtilsRef: DrawingUtils" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="54">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="56" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ handleLandmarkProcessing(landmarks: any): void&lt;br&gt;+ onResultsCallback(results: any): void&lt;br&gt;+ setupHands(): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="54">
-            <mxGeometry y="60" width="140" height="70" as="geometry"/>
-          </mxCell>
+        <mxCell id="54" value="DetectingMode&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- isConnected: Boolean&lt;br&gt;- drawingUtilsRef: DrawingUtils&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ handleLandmarkProcessing(landmarks: any): void&lt;br&gt;+ onResultsCallback(results: any): void&lt;br&gt;+ setupHands(): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="650" width="280" height="150" as="geometry"/>
         </mxCell>
 
         <!-- Utility Classes -->
-        <mxCell id="57" value="APIClient" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="850" width="150" height="120" as="geometry"/>
-          <mxCell id="58" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- baseUrl: String" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="57">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="59" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ get(endpoint: String, body: Object): Response&lt;br&gt;+ post(endpoint: String, body: Object): Response" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="57">
-            <mxGeometry y="60" width="140" height="60" as="geometry"/>
-          </mxCell>
+        <mxCell id="57" value="APIClient&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- baseUrl: String&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ get(endpoint: String, body: Object): Response&lt;br&gt;+ post(endpoint: String, body: Object): Response" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="850" width="280" height="120" as="geometry"/>
         </mxCell>
 
-        <mxCell id="60" value="WebSocketClient" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="850" width="150" height="130" as="geometry"/>
-          <mxCell id="61" value="&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- socket: WebSocket&lt;br&gt;- isConnected: Boolean" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="60">
-            <mxGeometry width="140" height="60" as="geometry"/>
-          </mxCell>
-          <mxCell id="62" value="&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ connect(): void&lt;br&gt;+ sendLandmarks(landmarks: any): void&lt;br&gt;+ onMessage(callback: Function): void" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0],[0,0]];portConstraint=eastwest;" vertex="1" parent="60">
-            <mxGeometry y="60" width="140" height="70" as="geometry"/>
-          </mxCell>
+        <mxCell id="60" value="WebSocketClient&lt;br&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;br&gt;- socket: WebSocket&lt;br&gt;- isConnected: Boolean&lt;hr&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;br&gt;+ connect(): void&lt;br&gt;+ sendLandmarks(landmarks: any): void&lt;br&gt;+ onMessage(callback: Function): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="850" width="260" height="140" as="geometry"/>
         </mxCell>
 
         <!-- Relationships -->
-        <!-- Inheritance/Interface Implementation -->
-        <mxCell id="63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8" target="35">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="450" y="160" as="sourcePoint"/>
-            <mxPoint x="450" y="450" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Association between User and UserLessonProgress -->
+        <mxCell id="66" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="2" target="20">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8" target="37">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="160" as="sourcePoint"/>
-            <mxPoint x="650" y="450" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="67" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="66">
+          <mxGeometry x="1" relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="32" target="37">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="580" as="sourcePoint"/>
-            <mxPoint x="650" y="450" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="68" value="0..*" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="66">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Association -->
-        <mxCell id="66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="2" target="20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="125" y="200" as="sourcePoint"/>
-            <mxPoint x="450" y="250" as="targetPoint"/>
-            <mxPoint x="125" y="250" as="sourcePoint"/>
-            <mxPoint x="450" y="200" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Association between Course and CourseLesson -->
+        <mxCell id="69" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="5" target="14">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="67" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="66">
-          <mxGeometry x="0.5" y="0" relative="1" as="geometry"/>
+        <mxCell id="70" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="69">
+          <mxGeometry x="1" relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="68" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="66">
-          <mxGeometry x="-0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="5" target="14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="180" as="sourcePoint"/>
-            <mxPoint x="50" y="250" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="70" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="69">
-          <mxGeometry x="0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="71" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="69">
-          <mxGeometry x="-0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="8" target="17">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="525" y="180" as="sourcePoint"/>
-            <mxPoint x="250" y="250" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="73" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="72">
-          <mxGeometry x="0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="74" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="72">
-          <mxGeometry x="-0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="20" target="23">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="525" y="380" as="sourcePoint"/>
-            <mxPoint x="650" y="250" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="76" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="75">
-          <mxGeometry x="0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="77" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="75">
-          <mxGeometry x="-0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="17" target="11">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="370" as="sourcePoint"/>
-            <mxPoint x="650" y="180" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="79" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="78">
-          <mxGeometry x="0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="80" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" parent="78">
-          <mxGeometry x="-0.5" y="0" relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="54" target="60">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="925" y="780" as="sourcePoint"/>
-            <mxPoint x="250" y="850" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="42" target="45">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="125" y="770" as="sourcePoint"/>
-            <mxPoint x="250" y="650" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=standard;startArrow=circle;" edge="1" parent="1" source="42" target="48">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="125" y="770" as="sourcePoint"/>
-            <mxPoint x="450" y="650" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="71" value="0..*" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="69">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Dependency -->
-        <mxCell id="84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;" edge="1" parent="1" source="32" target="57">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="580" as="sourcePoint"/>
-            <mxPoint x="50" y="850" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Association between Lesson and LessonQuestion -->
+        <mxCell id="72" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="8" target="17">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;" edge="1" parent="1" source="39" target="57">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="925" y="580" as="sourcePoint"/>
-            <mxPoint x="50" y="850" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="73" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="72">
+          <mxGeometry x="1" relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;" edge="1" parent="1" source="54" target="57">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="925" y="780" as="sourcePoint"/>
-            <mxPoint x="50" y="850" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="74" value="0..*" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="72">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
         </mxCell>
 
-        <!-- Aggregation -->
-        <mxCell id="87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=aggregate;startArrow=circle;" edge="1" parent="1" source="5" target="14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="180" as="sourcePoint"/>
-            <mxPoint x="50" y="250" as="targetPoint"/>
-          </mxGeometry>
+        <!-- Association between UserLessonProgress and UserQuestionAnswer -->
+        <mxCell id="75" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="20" target="23">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=aggregate;startArrow=circle;" edge="1" parent="1" source="8" target="17">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="525" y="180" as="sourcePoint"/>
-            <mxPoint x="250" y="250" as="targetPoint"/>
-          </mxGeometry>
+        <mxCell id="76" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="75">
+          <mxGeometry x="1" relative="1" as="geometry"/>
         </mxCell>
+        <mxCell id="77" value="0..*" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="75">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Association between Question and LessonQuestion -->
+        <mxCell id="78" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="11" target="17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="79" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="78">
+          <mxGeometry x="1" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="80" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="78">
+          <mxGeometry x="-1" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Dependency relationships -->
+        <mxCell id="84" value="" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="32" target="57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="85" value="" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="39" target="57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="86" value="" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="54" target="60">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
